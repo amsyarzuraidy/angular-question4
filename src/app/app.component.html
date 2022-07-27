@@ -1,0 +1,51 @@
+<form [formGroup]="profileForm" (ngSubmit)="submit()">
+  <div class="form-group">
+    <label for="exampleInputEmail1" class="required">Full Name</label>
+
+    <div class="d-flex">
+      <div class="firstname">
+        <input
+          type="text"
+          class="form-control"
+          id="firstname"
+          formControlName="firstName"
+          aria-describedby="firstnameHelp"
+          placeholder="First Name"
+        />
+
+        <small id="firstname" class="form-text text-muted">First Name</small>
+      </div>
+
+      <div class="lastname">
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          formControlName="lastName"
+          aria-describedby="lastnameHelp"
+          placeholder="Last Name"
+        />
+
+        <small id="firstname" class="form-text text-muted">Last Name</small>
+      </div>
+    </div>
+  </div>
+  <div class="form-group mt-4">
+    <label for="exampleInputEmail1" class="form-label">E-mail</label>
+    <input
+      type="email"
+      class="form-control"
+      id="exampleInputEmail1"
+      formControlName="email"
+      aria-describedby="emailHelp"
+      placeholder="ex:email@yahoo.com"
+    />
+    <div id="emailHelp" class="form-text">example@example.com</div>
+  </div>
+  <div class="mt-4 d-flex">
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="button" class="btn btn-primary" (click)="clearForm()">
+      Clear Form
+    </button>
+  </div>
+</form>

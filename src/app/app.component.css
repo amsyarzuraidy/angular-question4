@@ -1,0 +1,22 @@
+p {
+  font-family: Lato;
+}
+
+.required:after {
+  content: '*';
+  color: red;
+}
+
+div.firstname {
+  width: 40%;
+  margin-right: 10px;
+}
+
+div.lastname {
+  width: 40%;
+}
+
+button {
+  display: block;
+  margin-right: 15px;
+}
